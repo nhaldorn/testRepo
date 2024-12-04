@@ -1,0 +1,7 @@
+---
+storeId: 8f626cf3-f6e8-4147-a567-f62f87bfc30e
+
+fhirStore:
+  profile: docker-it
+  jdkJavaOptions: "-XX:MaxRAMPercentage=70.0 -XX:MinRAMPercentage=70.0 -XX:InitialRAMPercentage=70.0"
+  imageVersion: develop

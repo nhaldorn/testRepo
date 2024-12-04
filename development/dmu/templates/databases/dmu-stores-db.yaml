@@ -1,0 +1,32 @@
+kind: "postgresql"
+apiVersion: "acid.zalan.do/v1"
+
+metadata:
+  name: "acid-dmu-store"
+  labels:
+    team: acid
+
+spec:
+  enableLogicalBackup: false
+  teamId: "acid"
+  postgresql:
+    version: "13"
+  numberOfInstances: 1
+  volume:
+    size: "1Gi"
+    storageClass: ssd
+  users:
+    fhirstoreuser:
+    - createrole
+  allowedSourceRanges:
+    # IP ranges to access your cluster go here
+  resources:
+    requests:
+      cpu: 100m
+      memory: 100Mi
+  databases:
+    projects: fhirstoreuser
+
+    db3f93f29b18a1425d8b96fa1cb7b0b75c: fhirstoreuser
+    dbc5a0912bf53646b1a6d2a9ca7536f1f0: fhirstoreuser
+    db8f626cf3f6e84147a567f62f87bfc30e: fhirstoreuser

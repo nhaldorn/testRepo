@@ -6,3 +6,5 @@ version: 1.0.0
 appVersion: 1.0.0
 
 dependencies:
+  - name: fs-dev-8f626cf3-f6e8-4147-a567-f62f87bfc30e
+    version: 1.0.0
